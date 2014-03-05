@@ -1,0 +1,13 @@
+
+(C) Node definitions throughout the Safari online book have the closing
+single quote
+on a line by itself. They should be on the same line as the opening
+single quote.
+This is correct in the printed book. In fact, there are a number of
+similar formatting
+issues that only appear in the Safari online book. I've noted some of
+them below.
+Starting with Ch.2 I'm now reading a borrowed copy of the Apress book so
+I won't
+be commenting on these issues further.
+
