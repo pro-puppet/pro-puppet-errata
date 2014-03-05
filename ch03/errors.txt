@@ -1,0 +1,234 @@
+
+M = mistake
+U = unclear
+T = typo
+E = text change
+C = comment
+
+(E) Pg. 73 "integration with VCS" ->
+"integration with our VCS"
+
+(C) Pg. 74 The meaning of the '-e' option is never described. The examples make
+it
+easy to guess what it means but it should still be described in at least a
+little detail.
+
+(C) Pg. 74 "the notify function is much more forgiving about its inputs". If
+you're going to
+the trouble of showing the differences between notify and notice, and state that
+one is more
+forgiving than the other, you should show some examples of how this is true.
+
+(T) Pg. 75 "on the '/tmp/redshirt/logan' file resource" ->
+""in the '/tmp/redshirt/logan' file resource""
+
+(C) Pg. 75 Some background on puppetlabs-stdlib should be given. Why does it
+exist? What does it do?
+
+(M) Pg. 75 There needs to be some text added between Listing 3-5 and Listing 3.6
+that
+mentions creating the file puppet_example.pp. Otherwise, it looks like
+puppet_example.pp
+just pops out of nowhere.
+
+(M) Pg. 75 For Listing 3.7 to work, Listing 3.5 should include a 'cd ~/testing'
+command.
+
+(U) Pg. 75 Should the '--modulepath' option in Listing 3-7 be
+/root/testing/stdlib? If not, why
+not? What would happen if there were other modules under /root/testing that we
+didn't
+want to be seen in by the puppet apply command?
+
+(U) Pg. 76 In the previous chapter we were shown that /etc/puppet/manifests
+contains site.pp,
+and that modules go under /etc/puppet/modules. Yet, Listing 3-8 shows the ssh
+module in
+the same directory as site.pp. You should mention that this organization is
+different than what
+was shown before, but that supplying a specific directory to --modulepath makes
+this all work.
+
+(U) Pg. 77 "bare-bones site.pp file that simply includes the ssh class."
+This is unclear because there's no include statement in Listing 3-8. There needs
+to be a discussion of the difference between "class { 'xxx'}" and  "class xxx
+{}"
+
+(U) Pg. 78 "This scenario has a Hiera component"
+Where and what is that component? It isn't obvious from what follows.
+
+(C) Pg. 78 The layout of /etc/puppet would be much clearer if the output of the
+'tree' command (or similar) were used.
+
+(T) Pg. 78 "full copy of the site.pp" ->
+"full copy of site.pp"
+
+(C) Pg. 79 "The puppet agent run syncs facts"
+Is "sync" the right word to use? In this example, maybe "loads facts" would be
+better since that's what Listing 3-16 shows.
+
+(U) Pg. 79 "other pluginsync artifacts"
+Plusingsync artifacts haven't been mentioned before.
+
+(T) Pg. 79 "The other windows, containing" ->
+"The other window, containing"
+
+(E) Pg. 80 "as an rsync of /etc/puppet" ->
+"as an rsync of /etc/puppet from the real Puppet master"
+
+(U) Pg. 80 "you won't have to push trust into an untrusted virtual machine"
+What does this mean?
+
+(T) Pg. 80 "a virtualization middleware" ->
+"virtualization middleware"
+
+(E) Pg. 80 "makes starting, logging into, destroying, and repeating the process
+smooth" ->
+"makes starting, logging into, and destroying a virtual machine smooth and
+easily repeatable"
+
+(C) Pg. 80 "Vagrant is a collection of Ruby scripts that wrap software
+hypervisors"
+Vagrant is much more than that. Plus, it doesn't wrap a hypervisor.
+
+(T) Pg. 80 "Vagrant workflow" ->
+"A Vagrant workflow"
+
+(T) Pg. 80 "a vagrant virtual machine template" ->
+"a Vagrant virtual machine template"
+
+(E) Pg. 80 "of your production server load" ->
+"of your production server configuration"
+
+(E) Pg. 80 "Vagrant machine" ->
+"Vagrant virtual machine"
+(This occurs in several places)
+
+(M) Pg. 80 The example showing how to create autosign.conf needs to somehow
+show what directory this file should be in.
+
+(T) Pg. 81 In Listing 3-17 should there be a line that starts with ".box". This
+looks like a typo. Also, the "The box you're attempting ..." line should be
+removed.
+New Vagrant users won't see it.
+
+(U) Pg. 84 Why isn't putting everything under /etc/puppet into a repo a
+third option in the Maintenance of Modules section?
+
+(E) Pg. 85 "to do such smart behavior" ->
+"to act so intelligently"
+
+(C) Pg. 89 You must have used an old version of git in these examples. Newer
+version
+use the singular noun when just 1 item has been changed (e.g. '1 files' vs. '1
+file')
+
+(T) Pg. 89 The line starting "You cloned" should appear as a bulleted item just
+like the other
+4 items.
+
+(U) Pg. 89 "the Puppet configuration on a node configures the environment that
+the node uses"
+This is unclear. For example, so far we've only seen environments configured in
+a Puppet master's
+puppet.conf files. Yet, this statement implies that environments can appear on
+Puppet client
+nodes also. Or, does this sentence only apply in masterless environments? This
+seem unlikely because
+the next sentence says "The Puppet master does not directly control which
+environment a machine connects
+to". Thus, there is indeed a Puppet master. In any case, this Tip badly need
+clarification.
+
+(T) Pg. 91 "Addeddocs comment" ->
+"Added docs comments"
+
+(E) Pg. 92 "and submit their" ->
+"and commit their"
+
+(E) Pg. 92 "and check out the branch" ->
+"and check out the testing branch"
+
+(E) Pg. 92 "Merge branch into master" ->
+"Merge testing branch into master"
+
+(T) Pg. 92 "Merge branch into master with local clone, push" ->
+"Merge the branch into master on the local clone and push"
+
+(T) Pg. 92 "and checks out" ->
+"and check out"
+
+(T) Pg. 93 "via post-receive hook" ->
+"via a post-receive hook"
+
+(T) Pg. 93 "from a central repository" ->
+"from the central repository"
+(This is correct on Pg. 92)
+
+(T) Pg. 93 "Make changes, and then push a testing branch named feature1" ->
+"Make changes and then push a testing branch named feature1 to the central
+repository"
+(Again, follow the same style as on Pg. 92)
+
+(T) Pg. 93 "following action" ->
+"following actions"
+
+(E) Pg. 93 "issue puppet --test --environment=feature1" ->
+"run puppet --test --environment=feature1"
+
+(E) Pg. 93 "Merge the branch feature1 into the master, and put it to the Git
+server" ->
+"Merge the branch feature1 into into the master on the local clone and push to
+the central repository"
+
+(C) Pg. 93 The word "folder" is used in several places. Previously, the word
+"directory" had been used. One or the other should be used consistently.
+I vote for "directory".
+
+(E) Pg. 93 "done by a script" ->
+"done by the post-receive hook"
+
+(U) Pg. 93 "all Git branches that aren't master/production are testing branches"
+This needs to be reworded. What does "master/production" mean?
+
+(E) Pg. 93 "modern coding" ->
+"modern version control"
+
+(E) Pg. 94 "expands out" ->
+"expands"
+
+(U) Pg. 94 "minimally configured nodes"
+What does this mean?
+
+(U) Pg. 94 "you should run the master branch of your Git repository under the
+name production"
+This is very awkward. How about "you should change the default branch of your
+Git repository to production"?
+By the way, is what's shown in Listing 3-40 really the best way to do this?
+
+(C) Pg. 94 The reader will have no idea what a YAML back-end is. In fact, this
+whole paragraph
+will make no sense. I suggest moving it to Chapter 12.
+
+(E) Pg. 95 "of the Puppet manifests Git repository" ->
+"of the Git repository containing the Puppet manifests"
+
+(T) Pg. 95 "two component hook" ->
+"two-component hook"
+
+(E) Pg. 95 "bounce" ->
+"restart"
+
+(E) Pg. 95 "error is that displayed" ->
+"error is displayed"
+
+(E) Pg. 96 "PuppetSync" ->
+"The puppet-sync module"
+
+(E) Pg. 96 "simultaneously and in parallel" ->
+"simultaneously"
+
+(U) Pg. 96 "Rebase against the master branch"
+This wasn't shown in the text.
+
+(U) Pg. 96 What's a "dynamic environment"?
