@@ -1,0 +1,175 @@
+(U) Pg. 100 Listing 4-2 shows package resource definitions appearing as
+the result
+of running 'puppet resource service'. Are we supposed to do anything
+with these definitions?
+
+(U) Pg. 100 In Listing 4-2 why aren't standard 'yum install' or
+'service' commands used?
+
+(U) Pg. 101 How is a reader supposes to know what an NPM provider or RVM is?
+
+(T) Pg 101 "Often installing Passenger" ->
+"Often, installing Passenger"
+
+(T) Pg 103 "will consume some time is to run" ->
+"will consume some time to run"
+
+(T) Pg. 103 "facter fqdn." ->
+"facter fqdn"
+
+(T) Pg. 103 "Pro-puppet-master-centos-II" ->
+"pro-puppet-master-centos-II"
+
+(E) Pg. 103 "stored in the environment as a standard environment
+variable" ->
+"stored in a standard environment variable"
+
+(T) Pg. 105 "ServerName attribute of" ->
+"ServerName attribute in"
+
+(C) Pg. 106 You should mention that the notice about installing Emacs
+is just an example. New readers might think that they should see this
+exact line.
+
+(U) Pg. 108 Figure 4-1 looks like there are 3 machines behind the load
+balancer,
+but the Note makes it clear that there is really just 1 machine there.
+
+(E) Pg. 111 "the puppet user, as this parameter decides" ->
+"the puppet user since this determines"
+
+(E) Pg. 111 "sure to modify" ->
+"sure to replace"
+
+(C) Pg. 111 "Step 3" vs. "four lines". You should decide on a convention
+for including numbers in text. Either they should be all numeric (e.g.
+3, 4) or all text (e.g. three, four).
+
+(E) Pg. 111 "Pass the request along" ->
+"Pass the request"
+
+(M) Pg. 111, 112 There are 3 places that the front-end load balancer
+configuration
+file is mentioned, saying that it appears in Listing 4-14. This actually
+appears in Listing 4-13.
+
+(E) Pg. 111 "are listed, port 18140 and 18141" ->
+"are listed, running on ports 18140 and 18141"
+
+(T) Pg. 112 "look to" ->
+"look at"
+
+(T) Pg. 112 "mail.pro-puppet..com" ->
+"mail.pro-puppet.com"
+
+(T) Pg. 112 "back- end" ->
+"back-end"
+
+(E) Pg. 112 "HTTP systems" ->
+"HTTP servers"
+
+(T) Pg. 113 "logged into" ->
+"logged in"
+
+(E) Pg. 115 "is also available" ->
+"also appears"
+
+(T) Pg. 115 "let's bring back both workers back online" ->
+"let's bring both workers back online"
+
+(E) Pg. 120 "Use the puppet agent command to generate a certificate" ->
+"Use the puppet agent command to generate a certificate signing request"
+(The title for List 4-34 also needs to be modified). (This is correct on
+Pg 124).
+
+(E) Pg. 121 "used the ls utility" ->
+"used ls"
+
+(E) Pg. 122 "with a single thread" ->
+"with a single core"
+
+(M) Pg. 123 "which were defined in Listing 4-38" ->
+"which were defined in Listing 4-37"
+
+(C) Pg. 126 "First, remove the ssl/ca directory on the secondary CA server"
+This step isn't necessary if you use the -a option to rsync, which makes
+the destination an exact copy of the source.
+
+(E) Pg. 127 "a one-minute cron job" ->
+"a cron job that runs every minute"
+
+(C) Pg. 127 The font used in the paragraph starting "This uses the rsync
+utility" is wrong.
+It's using the console font from from the "crontab -l" example.
+
+(E) Pg. 128 "we get a test run as shown" ->
+"we make a test run as shown"
+
+(T) Pg. 130 "You performed twosimple" ->
+"You performed two simple"
+
+(M) Pg. 130 "We could also use DNS round robin to easily redirect
+and consolidate all certificate requests to a single Puppet CA worked".
+This is exactly the opposite of what DNS round robin does. It's odd
+that this mistake exists here since the following paragraph explains DNS
+round robin correctly.
+
+(E) Pg. 130 "a portion of the Puppet agent systems" ->
+"some Puppet agents"
+
+(E) Pg. 131 "As in our HTTP load balancing" ->
+"As in HTTP load balancing"
+
+(E) Pg. 131 "the Puppet agent supports the configuration of a Puppet CA
+server" ->
+"the Puppet agent can be configured to use a Puppet CA server"
+
+(U) Pg. 131 "The Puppet agent configuration should set the --ca_server
+configuration option"
+How? Does this go in puppet.conf where the other configuration options go?
+If so, why is the option name shown with the '--' characters?
+
+(E) Pg. 131 "written down in puppet.conf" ->
+"specified in puppet.conf"
+
+(T) Pg. 131 I see both "HA proxy" and "HA-proxy" used. However,
+according to http://haproxy.1wt.eu, its name is "HAproxy".
+This needs to be corrected in many places in the rest of this chapter.
+
+(T) Pg. 131 "impenetrable to the HA proxy" ->
+"impenetrable to HAproxy"
+
+(U) Pg. 131 "populating client configs to set the caserver configuration
+option"
+In addition to the awkward wording, it isn't clear how to set the
+caserver option. Also,
+is this the same --ca_server option I mentioned above?
+
+(U) Pg. 134 What does it mean to "segment" a Puppet infrastructure?
+
+(U) Pg. 134 What does running a "load-balancing virtual IP" mean?
+
+(T) Pg. 134 "to speak" ->
+"that speaks"
+
+(E) Pg. 134 "The Linux machine uses a BGP or OSPF or other routing
+protocol link" ->
+"The machine running Quagga uses a routing protocol link"
+
+(U) Pg. 134 The paragraph explaining anycast is extremely unclear.
+
+(E) Pg. 134 "and local code" ->
+"and local Puppet manifests"
+
+(U) Pg. 135 What does it mean that the Git directories "pollute" the
+structure shown?
+
+(U) Pg. 137 The sentence mentioning facts_format and facts_query
+has no value because these two parameters don't actually appear in
+Listing 4-68.
+
+(E) Pg. 138 "the systems may start to thrash" ->
+"it may start to thrash"
+
+(E) Pg. 138 "The Example.com operator" ->
+"Example.com" 
