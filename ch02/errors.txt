@@ -1,0 +1,221 @@
+
+(E) Pg. 1 "you use to create Puppet configuration" ->
+"you use to create Puppet configurations"
+
+(M) Pg. 1  “licensed as Apache 2.0” -> “licensed under the Apache 2.0
+license”
+This appears correctly in the section about "Facter and Facts".
+
+(U) Pg. 2 "The Puppet master runs as a daemon on a host and contains the
+configuration required for the specific environment.”
+This is poor wording. What does "the configuration required for the
+specific environment” mean?
+
+(T) Pg. 4 ".apt-get install vim” -> "apt-get install vim”
+
+(T) Pg. 5 "on Red Hat it would execute yum"
+"execute" should not be in italics.
+
+(E) Pg. 6 "Puppet configuration can be safely run" ->
+"Puppet can be safely run"
+
+(M) Pg. 7 "The first caveat is that the master needs to be a later
+release than the agents.” ->
+"The first caveat is that the master needs to be the same or a later
+release than the agents.”
+
+(T) Pg. 9 "On Red Hat, CentOS, Fedora, SUSE/SLES, Debian and Ubuntu,
+this package is called rubygems.” ->
+"On Red Hat, CentOS, Fedora, SUSE/SLES, Debian, and Ubuntu, this package
+is called rubygems.”
+
+(T) Pg. 10 "RubyGems or Source" ->
+"RubyGems or source"
+
+(M) Pg. 19 "and C:\ProgramData\PuppetLabs\puppet\etc\" ->
+"and C:\ProgramData\PuppetLabs\puppet\etc\puppet.conf"
+
+(E) Pg. 19 "Once we've configured appropriate DNS for Puppet" ->
+"Once we've configured appropriate DNS entries for Puppet"
+
+(E) Pg. 20 "This directory and file is often already created when the
+Puppet packages are installed. If it hasn’t already been created, create
+this directory and file now” ->
+"This directory and file are often already created when the Puppet
+packages are installed. If they haven’t already been created, create
+this directory and file now”
+
+(E) Pg. 21 "Starting the daemon will initiate" ->
+"Starting the daemon will initialize"
+
+(T) Pg. ? "puppet agent --test --server= puppet.pro-puppet.com” ->
+"puppet agent --test --server=puppet.pro-puppet.com”
+(On Safari online only)
+
+(M) Pg. 22 "with three options. The first option, --server," ->
+"with three options. The second option, --server,"
+
+(T) Pg. 23 "in the main section" ->
+"in the [main] section"
+
+(T) Pg. 23 "your client).The" ->
+"your client). The"
+
+(E) Pg. 23 "The agent sends the certificate request" ->
+"The agent sends the certificate signing request"
+
+Pg. ? "This configuration is called waitforcertand is” ->
+"This configuration is called waitforcert and is”
+(On Safari online only)
+
+(U) Pg. 26 In Listing 1-7 there are two node definitions for ‘node1’.
+The text doesn’t
+make it clear why an. A FQDN name is shown in one definition and just
+a hostname is shown in the other.
+
+(C) Pg. 26 Parameterized classes is too important a concept to be
+brushed over.
+Just a short description only confuses readers.
+
+(M) Pg. 28 "check the value of the operatingsystem fact" ->
+"check the value of the osfamily fact"
+
+(U) Pg. 28 "relationship between the Package["sudo-ldap"] resource"
+The listing show the "package {"sudo-ldap ...}" syntax. A new
+user won't know why Package has an upper case first letter. This problem is
+also present in many places in Ch. 2. It's first explained on Pg. 47.
+
+(E) Pg. 28 "allows Puppet to retrieve a file from the Puppet source" ->
+"allows Puppet to retrieve a file from the Puppet server"
+
+(E) Pg. 28 "is the name of the Puppet source" ->
+"is the name of the Puppet server"
+
+(E) Pg. 30 "By default, will Puppet use this cache” ->
+"By default, Puppet will use this cache”
+
+(U) Pg. 34 "Be sure you've installed the base operating system on these
+hosts as described
+in Chapter 1".
+Chapter 1 doesn't describe how to install operating systems. It
+describes how to
+install Puppet.
+
+(C) Pg. 34 Including the necessary Kickstart configuration to bootstrap
+Puppet is an
+excellent idea. However, the text should have noted that the example
+only works on
+Debian-derived operating systems. Better yet, the text should also
+include a sample
+configuration that works on RedHat-derived operating systems.
+
+(T) Pg. 35 Listing 2-2 “wll” -> “will”
+
+(C) Pg. 35 "/etc/puppet/manifests/"
+Is the convention going to be to include the final slash in directory
+pathnames?
+If so, Pg. 26, and probably others, has examples that need to be fixed.
+If not,
+then Pg. 35, and probably others, needs to be fixed.
+
+(C) Pg. 37 The concept of "dynamic scoping" is mentioned several times
+in this
+chapter. This is not a widely understood concept. The text should
+include an example
+illustrating dynamic scoping.
+
+(U) Pg. 38 "Each class, definition, or node introduces a new scope".
+The concept of a "definition" hasn't been explained yet. Mentioning it here
+only causes confusion. It isn't defined until Pg. 64.
+
+(U) Pg. 38 "imported manifests". The concept of "importing" hasn't been
+defined yet.
+New readers will be confused about the difference between "including"
+and "importing".
+
+(U) Pg. 38 "thus preventing the variable from being overwritten anywhere"
+I don't think this describes the issue. As I understand it, explicitly
+using top-scope
+variables prevents variables with similar names from other than
+top-scope from
+accidentally being referenced.
+
+(E) Pg. 38 "no way to explicitly retrieve it" ->
+"no way to explicitly reference variables defined in node scope"
+
+(T) Pg. 38 "is a way of writing the $sshd_package variable"
+"the" should not be in a different font.
+
+(U) Pg. 38 "will still be defined in local scope"
+Local scope hasn't been defined yet. In fact, it's defined in the next
+sentence.
+
+(U) Pg. 39 All of a sudden, variable names are shown that don't begin
+with a '$'.  Why? This should either be changed or explained. (I know it
+has to do with parameterized classes but they haven't been explained yet).
+
+(U) Pg. 39 "classes that take parameters when they are called"
+Classes are included, not called.
+
+(U) Pg. 40 An example of a parameterized class is shown at the top of
+the page.
+As I've said above, this concept needs much more explanation, both
+syntactically
+and semantically.
+
+(E) Pg. 41 "our sudo module contains the lines shown" ->
+"our sudo module contains the files and directories shown"
+
+(E) Pg. 42 "in the form of a revision" ->
+"in the form of a revision or commit"
+
+(E) Pg. 43 "execute the git binary" ->
+"run git"
+
+(U) Pg. 43 "We can now add files to this repository"
+The 'git add' command doesn't add files to a repository. 'git commit' does.
+
+(T) Pg. 43 "we can see what Git is about by using the git status command" ->
+"we can see what Git is about to do by using the git status command"
+
+(C) Pg. 43 This is not a very clear description of Git.
+
+(E) Pg. 43 "numeric numbers" ->
+"numbers"
+
+(M) Pg. 44 The ssh class definition refers to the ::ssh::package class
+but no such
+class exists. This reference should be to the ::ssh::install class
+
+(M) Pg. 45 "and used the include function to add all the classes"
+There are no includes shown in Listing 2-13.
+
+(M) Pg. 45 "We’ve created three classes: ssh, ssh::install, ssh::config,
+and ssh::service.” ->
+"We’ve created four classes: ssh, ssh::install, ssh::config, and
+ssh::service."
+
+(M) Pg. 46 "manifests as a variable called $osfamily" ->
+"manifests as a variable called $::osfamily"
+
+(M) Pg. 46 "Let's rewrite our ssh::package class" ->
+"Let's rewrite our ssh::install class" . Also, "our" should
+not appear in console font.
+
+(M) Pg. 47 "In the preamble of the ssh::params class" ->
+"In the preamble of the ssh::install class"
+
+(M) Pg. 56 "placed inside brackets the name" ->
+"placed inside parentheses the name"
+
+(T) Pg. 57 "lensure => running," ->
+"ensure => running,"
+
+(E) Pg. 58 "And add the files" ->
+"And add the files and directory"
+
+(C) Pg. 59 I've never heard of a "brick" module.
+
+(T) Pg. 61 " group => 'root'," ->
+"group => 'root',"
+(the leading space is removed). 
