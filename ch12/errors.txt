@@ -5,16 +5,26 @@ Pg 279
 Listing 12.52 The modules /openvpn/manifests/init.pp file
 
 file { '/etc/openvpn/openvpn.crt' :
-   ensure  => present,
+   ensure   => present,
    content  => template('openvpn.crt'),
+}
+
+file { '/etc/openvpn/openvpn.key' :
+   ensure   => present,
+   content  => template('openvpn.key'),
 }
 
 Should be:
 
 file { '/etc/openvpn/openvpn.crt' :
-   ensure  => present,
+   ensure   => present,
    content  => hiera('openvpn.crt'),
 }
+file { '/etc/openvpn/openvpn.key' :
+   ensure   => present,
+   content  => hiera('openvpn.key'),
+}
+
 
 Credit to: Julien Deloubes julien.deloubes@gmail.com
 
