@@ -1,0 +1,20 @@
+
+
+Pg 279
+
+Listing 12.52 The modules /openvpn/manifests/init.pp file
+
+file { '/etc/openvpn/openvpn.crt' :
+   ensure  => present,
+   content  => template('openvpn.crt'),
+}
+
+Should be:
+
+file { '/etc/openvpn/openvpn.crt' :
+   ensure  => present,
+   content  => hiera('openvpn.crt'),
+}
+
+Credit to: Julien Deloubes julien.deloubes@gmail.com
+
