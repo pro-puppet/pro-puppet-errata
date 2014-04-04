@@ -1,0 +1,14 @@
+Chapter 2 page 63
+
+class apache::install {
+  package {[ 'apache2' ]:
+    ensure => present,
+  }
+}
+
+Instead of:
+class apache::install {
+  package { 'apache2' :
+    ensure => present,
+  }
+}
