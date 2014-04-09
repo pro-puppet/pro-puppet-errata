@@ -1,3 +1,8 @@
+M = mistake
+U = unclear
+T = typo
+E = text change
+C = comment
 
 (C) Node definitions throughout the Safari online book have the closing
 single quote

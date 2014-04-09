@@ -1,3 +1,9 @@
+M = mistake
+U = unclear
+T = typo
+E = text change
+C = comment
+
 (U) Pg. 100 Listing 4-2 shows package resource definitions appearing as
 the result
 of running 'puppet resource service'. Are we supposed to do anything
