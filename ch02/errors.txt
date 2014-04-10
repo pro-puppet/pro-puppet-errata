@@ -1,3 +1,8 @@
+M = mistake
+U = unclear
+T = typo
+E = text change
+C = comment
 
 (E) Pg. 1 "you use to create Puppet configuration" ->
 "you use to create Puppet configurations"
