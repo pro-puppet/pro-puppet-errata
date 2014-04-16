@@ -1,0 +1,159 @@
+These errors credit to Jon Forrest
+
+M = mistake - all readers should be aware of this
+U = unclear - chances are readers will wonder about this
+T = typo - a trivial uncontroversial text change
+E = text change - most readers won't care but editors should
+C = comment - more detailed or complex issue
+
+(T) Pg. 227 "to the existing resources types, providers and functions" ->
+"to the existing resources types, providers, and functions"
+
+(E) Pg. 227 "support for environmental variables" ->
+"support for environment variables"
+(This occurs three times in the note on this page.)
+
+(C) Pg. 227 "concept called plug-ins in modules"
+Is this really the name of the concept?
+
+(U) Pg. 227 "host that includes a particular module"
+This could be confusing because a reader might think you're talking
+about the Puppet "include" function.
+
+(E) Pg. 228 "there are two popular approaches to the task" ->
+"there are two popular approaches for doing so"
+
+(E) Pg. 228 "allows a greater portability" ->
+"allows greater portability"
+
+(M) Pg. 228 The list of what's contained in the bind module should contain the
+line
+bind/lib as the second to last line.
+
+(T) Pg. 228 "setting turns on the plug-ins in modules capability"
+Everywhere else on this page you've shown "plug-ins in modules" in
+italics. Why isn't it that way here?
+
+(T) Pg. 229 "refer to osfamily with $ osfamily" ->
+"refer to osfamily with $osfamily"
+
+(E) Pg. 229 "it will return" ->
+"the script will return"
+
+(C) Pg. 230 The indentation of several lines in Listing 10-4 is wrong. For
+example, the '}'
+on the last line is too far to the left.
+
+(E) Pg. 231 "similar approach to commands" ->
+"similar approach with commands"
+
+(C) Pg. 231 Sometimes they're "your" facts and sometimes they're "our" facts.
+Be consistent.
+
+(E) Pg. 231 "that references this directory and will allow Facter to find" ->
+"that references this directory so that Facter can find"
+
+(E) Pg. 231 "you can call Facter" ->
+"you can run Facter"
+
+(E) Pg. 231 "If the required output appears" ->
+"If the expected output appears"
+
+(E) Pg. 231 "error message you can debug will be generated" ->
+"error message will be generated"
+
+(T) Pg. 231 "following directory." ->
+"following directory:"
+
+(E) Pg. 232 "and output to" ->
+"and send output to"
+
+(C) Pg. 232 You use "key=value" in one place and "key/value" in another.
+Be consistent.
+
+(E) Pg. 232 "or txt files" ->
+"or text files"
+
+(E) Pg. 232 "adding to types" ->
+"adding types"
+
+(T) Pg. 232 "Types, Providers and Functions" ->
+"Types, Providers, and Functions"
+(This error occurs several times on this page. It's also correct in several
+places.)
+
+(T) Pg. 232 "earlier this chapter" ->
+"earlier in this chapter"
+
+(E) Pg. 233 "And just as you can with custom facts" ->
+"And just as with custom facts"
+
+(C) Pg. 233 Don't apache/lib/puppet and apache/lib/puppet/parser also need to be
+created?
+If you're presuming a "mkdir -p" approach then these don't have to be explicitly
+mentioned.
+
+(E) Pg. 233 "As we did when we configured Puppet for custom facts" ->
+"As when we added custom facts to Puppet"
+
+(E) Pg. 233 "synced down to an agent" ->
+"synced to an agent"
+
+(E) Pg. 233 "Puppet has a package type, a service type, a user type, and all the
+other types available"
+"Puppet has many types available, such as  a package type, a service type, a
+user type, and many others"
+
+(E) Pg. 234 "First we create a module called custom to store it in" ->
+"First we create a module called custom with the following files and
+directories"
+
+(E) Pg. 236 "This is a parameter value" ->
+"This is a parameter"
+
+(E) Pg. 236 "In this parameter we've again used" ->
+"This parameter uses"
+
+(E) Pg. 236 "could also use this validation for" ->
+"could also validate"
+
+(E) Pg. 236 "In the case of our method," ->
+"Our method"
+
+(T) Pg. 238 "You've just seena very" ->
+"You've just seen a very"
+
+(C) Pg. 238 "rather than multi-line configuration files."
+/etc/shells is a multi-line configuration file.
+
+(T) Pg. 240 "They tell the Puppet" ->
+"They tell Puppet"
+
+(E) Pg. 241 "the relevant line of configuration" ->
+"the relevant configuration line"
+
+(E) Pg. 241 "add the /bin/anothershell" ->
+"add /bin/anothershell"
+
+(T) Pg. 241 "add anothershell" ->
+"add /bin/anothershell"
+
+(E) Pg. 245 "or testing environment and enable" ->
+"or testing environment, and enable"
+
+(C) Pg. 245 The three 'mkdir' commands are a different style for showing
+the required module layout. Previously, all that was shown was a list of
+directory and file names.
+
+(E) Pg. 245 "action, and with rvalues you pass" ->
+"action. With rvalues you pass"
+
+(E) Pg. 246 "whether the file parses without error" ->
+"whether there are any syntax errors"
+
+(E) Pg. 246 "function performed correctly" ->
+"function ran correctly"
+
+(T) Pg. 248 "providers, functions and facts" ->
+"providers, functions, and facts"
+
