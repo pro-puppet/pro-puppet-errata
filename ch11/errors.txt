@@ -1,0 +1,41 @@
+All these credit to Jon Forrest
+
+M = mistake
+U = unclear
+T = typo
+E = text change
+C = comment
+
+(U) Pg. 249 Most readers won't know what "an orchestration framework" is.
+I know I don't.
+
+(C) Pg. 249 "commands dispatched to systems in this manner are difficult to
+manage using the same tools and processes that you manage code with"
+Give an example of this.
+
+(U) Pg. 249 "MCollective agents"
+It would be useful to contrast an MCollective agent with a Puppet agent.
+
+(E) Pg. 250 "actions on all of your systems is quite straightforward" ->
+"actions is quite straightforward"
+(The point is that the actions don't have to occur on all your systems)
+
+(E) Pg. 250 "may consider deploying" ->
+"may require deploying"
+
+(E) Pg. 253 "connect our clients" ->
+"connect our client"
+(The example layout only includes one client.)
+
+(E) Pg. 255 "has packages for both DEB and RPM" ->
+has packages in both .deb and .rpm formats"
+
+(E) Pg. 257 "addressed by metadata" ->
+"selected by examining metadata"
+
+(U) Pg. 257 There are several places on this page that talk about the Facter
+library.
+Why is Facter called a library?
+
+(E) Pg. 257 "locate the Precise boxes" ->
+"locate the boxes running Debian Precise"

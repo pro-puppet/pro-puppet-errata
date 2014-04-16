@@ -28,3 +28,104 @@ file { '/etc/openvpn/openvpn.key' :
 
 Credit to: Julien Deloubes julien.deloubes@gmail.com
 
+
+(E) Pg. 263 "we've taught you" ->
+"you've learned"
+
+(E) Pg. 263 "It is still right next to" ->
+"It's still contained in"
+
+(E) Pg. 265 "and can split on" ->
+"and can key off of"
+
+(E) Pg. 265 "package manager or Gems" ->
+"package manager or RubyGems"
+
+(C) Pg. 265 "Hiera can be installed from system packages (Listing 12-6) or with
+RubyGems (Listing 12-7)."
+This is already stated in the first sentence of this paragraph. There's no need
+to say it again.
+
+(E) Pg. 265 "Installing Hiera with packages" ->
+"Installing Hiera from packages"
+
+(T) Pg. 266 "/etc//hiera.yaml" ->
+"/etc/hiera.yaml"
+
+(E) Pg. 267 "The file /etc/puppet/hiera.yaml is used" ->
+"This file is used"
+
+(E) Pg. 267 "rather than being itself a data store" ->
+"rather than being a data store itself"
+
+(E) Pg. 267 "it will attempt to make the lookup on the first element" ->
+"Hiera will attempt to match the first element"
+
+(E) Pg. 267 "First create the directory for data" ->
+"First create the data directory"
+
+(E) Pg. 268 "run it with the debug flag" ->
+"run it with the debug flag (-d)"
+
+(T) Pg. 270 "we use Puppet apply"
+Following convention on Page 268, "Puppet apply" should be "puppet apply" and
+should
+be in bold.
+
+(T) Pg. 270 "a value from hiera" ->
+"a value from Hiera"
+
+(E) Pg. 270 "code running in development is a good mock for the Puppet code" ->
+"code running in development imatches the Puppet code"
+
+(E) Pg. 271 "without giving much thought to type" ->
+"without giving much thought to the other types Hiera can return"
+
+(E) Pg. 271 "in the YAML format" ->
+"in YAML format"
+
+(T) Pg. 272 In Listing 12-26 shouldn't there be a newline after "clock3"] ?
+
+(T) Pg. 273 "As you can see, we can to offload" ->
+"As you can see, we can offload"
+
+(T) Pg. 275 "backup_dirs array is set" ->
+"the backup_dirs array is set"
+
+(T) Pg. 275 "focusing the data" ->
+"focusing on the data"
+
+(E) Pg. 275 "Where putting strings" ->
+"While putting strings"
+
+(E) Pg. 276 "the package, file, service model"
+On Pg. 275 you said "package-file-service". Be consistent.
+
+(E) Pg. 277 "Second, create a global.d directory" ->
+"Second, create a /etc/puppet/data/global.d directory"
+
+(T) Pg. 281 "(Listing 12-60)and" ->
+"(Listing 12-60) and"
+
+(T) Pg. 281 "example of use(Listing 12-61.)" ->
+"example of use (Listing 12-61.)"
+
+(E) Pg. 284 "you will want to remove defaults.yaml fully" ->
+"you will want to securely remove defaults.yaml"
+
+(T) Pg. 285 "keys on each puppet Master" ->
+"keys on each Puppet master"
+
+(M) Pg. 287 "presented as in Listing 12-74" ->
+"presented in Listing 12-72"
+
+(T) Pg. 288 "data entry science::param2: 'looked up in Hiera'." ->
+"data entry science::param2: 'looked up in hiera'."
+
+(T) Pg. 289 "Openstack-infra does not"
+"Openstack-infra" should be in console bold, as on Page 288.
+
+(T) Pg. 292 "a slew of Hiera backends to store our Hiera data"
+The names of the backends that follow should use the same font that was used
+when the backends were presented earlier in the chapter.
+
