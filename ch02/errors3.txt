@@ -1,0 +1,23 @@
+
+Page 39
+
+Missing $ on class variables when used in "if", not working on puppet 2.7.11, do not raises error.
+
+Snipet.
+
+---------8<---------
+   manage_service = false,
+    package_name   = $::ssh::params::sshd_package
+    ) inherits ssh::params {
+ -    if manage_package == true {
+ +    if $manage_package == true {
+        package { $package_name:
+          ensure => installed,
+        }
+      }
+ -    if manage_service == true {
+ +    if $manage_service == true {
+        service { $::ssh::params::sshd_service:
+          ensure => running,
+        }
+--------->8---------
