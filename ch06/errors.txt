@@ -1,0 +1,7 @@
+
+Page 159
+
+(T) "U and D in 'include' are juxtaposed." It should read:
+$ puppet apply -e 'include puppetdb::master::config'
+
+Credit to:  "K. Darien Freeheart"
