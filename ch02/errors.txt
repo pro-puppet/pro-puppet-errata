@@ -222,6 +222,12 @@ not appear in console font.
 (M) Pg. 49 "class ssh::package {" ->
 "class ssh::install {"
 
+(C) Pg. 52 "You can read about chaining at http://docs.puppetlabs.com/guides/language_tutorial.html#chaining_resources."
+The link has been updated to https://docs.puppetlabs.com/puppet/latest/reference/lang_relationships.html#chaining-arrows
+
+(C) Pg. 52 "in addition to arrays, puppet also supports a hash syntax, which you can see at http://docs.puppetlabs.com/guides/language_tutorial.html#hashes."
+The link has been updated to https://docs.puppetlabs.com/puppet/latest/reference/lang_datatypes.html#hashes
+
 (M) Pg. 56 "placed inside brackets the name" ->
 "placed inside parentheses the name"
 
