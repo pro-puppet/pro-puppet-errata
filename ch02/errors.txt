@@ -200,6 +200,12 @@ and ssh::service.” ->
 "We’ve created four classes: ssh, ssh::install, ssh::config, and
 ssh::service."
 
+(M) Pg. 46 "/etc/puppet/modules# find." ->
+"/etc/puppet/modules# find ."
+
+(M) Pg. 46 "./ssh/manifests/package.pp" ->
+"./ssh/manifests/install.pp"
+
 (M) Pg. 46 "manifests as a variable called $osfamily" ->
 "manifests as a variable called $::osfamily"
 
