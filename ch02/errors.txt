@@ -200,6 +200,12 @@ and ssh::service.” ->
 "We’ve created four classes: ssh, ssh::install, ssh::config, and
 ssh::service."
 
+(M) Pg. 46 "/etc/puppet/modules# find." ->
+"/etc/puppet/modules# find ."
+
+(M) Pg. 46 "./ssh/manifests/package.pp" ->
+"./ssh/manifests/install.pp"
+
 (M) Pg. 46 "manifests as a variable called $osfamily" ->
 "manifests as a variable called $::osfamily"
 
@@ -209,6 +215,18 @@ not appear in console font.
 
 (M) Pg. 47 "In the preamble of the ssh::params class" ->
 "In the preamble of the ssh::install class"
+
+(M) Pg. 49 "Now we need to open up our ssh::package class" ->
+"Now we need to open up our ssh::install class"
+
+(M) Pg. 49 "class ssh::package {" ->
+"class ssh::install {"
+
+(C) Pg. 52 "You can read about chaining at http://docs.puppetlabs.com/guides/language_tutorial.html#chaining_resources."
+The link has been updated to https://docs.puppetlabs.com/puppet/latest/reference/lang_relationships.html#chaining-arrows
+
+(C) Pg. 52 "in addition to arrays, puppet also supports a hash syntax, which you can see at http://docs.puppetlabs.com/guides/language_tutorial.html#hashes."
+The link has been updated to https://docs.puppetlabs.com/puppet/latest/reference/lang_datatypes.html#hashes
 
 (M) Pg. 56 "placed inside brackets the name" ->
 "placed inside parentheses the name"
