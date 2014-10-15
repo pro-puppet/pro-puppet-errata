@@ -222,6 +222,9 @@ not appear in console font.
 (M) Pg. 49 "class ssh::package {" ->
 "class ssh::install {"
 
+(M) Pg. 51 "file { ::$ssh::params::ssh_service_config:" ->
+"file { $::ssh::params::ssh_service_config:"
+
 (C) Pg. 52 "You can read about chaining at http://docs.puppetlabs.com/guides/language_tutorial.html#chaining_resources."
 The link has been updated to https://docs.puppetlabs.com/puppet/latest/reference/lang_relationships.html#chaining-arrows
 
