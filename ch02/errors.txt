@@ -213,6 +213,9 @@ ssh::service."
 "Let's rewrite our ssh::install class" . Also, "our" should
 not appear in console font.
 
+(E) Pg. 46 "$package_name = $::osfamily  ?" ->
+"$package_name = $::osfamily  ? {"
+
 (M) Pg. 47 "In the preamble of the ssh::params class" ->
 "In the preamble of the ssh::install class"
 
