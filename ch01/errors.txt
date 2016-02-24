@@ -16,3 +16,7 @@ Starting with Ch.2 I'm now reading a borrowed copy of the Apress book so
 I won't
 be commenting on these issues further.
 
+(C) On Safari online book, listing 1-5
+node1# puppet agent --test --server= puppet.pro-puppet.com
+throws errors. 
+Remove the space after '--server='
