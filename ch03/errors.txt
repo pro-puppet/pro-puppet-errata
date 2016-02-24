@@ -18,6 +18,9 @@ the trouble of showing the differences between notify and notice, and state that
 one is more
 forgiving than the other, you should show some examples of how this is true.
 
+(T) Pg. 75, Listing 3-3 "file { '/tmp/redhsirt/logan':" ->
+"file { '/tmp/redshirt/logan':"
+
 (T) Pg. 75 "on the '/tmp/redshirt/logan' file resource" ->
 ""in the '/tmp/redshirt/logan' file resource""
 
